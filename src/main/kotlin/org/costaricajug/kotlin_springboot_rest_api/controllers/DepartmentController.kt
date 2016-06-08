@@ -13,9 +13,6 @@ import java.util.concurrent.atomic.AtomicLong
 @RequestMapping("/department")
 class DepartmentController @Autowired constructor(val service: DepartmentService) {
 
-
-    val counter = AtomicLong()
-
     @RequestMapping(method = arrayOf(RequestMethod.POST), produces = arrayOf("application/json"))
     fun findAll(@RequestBody department: Department): Department {
         service.create(department)

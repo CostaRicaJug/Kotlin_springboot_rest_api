@@ -13,5 +13,5 @@ class DepartmentService  @Autowired constructor(val repository:DepartmentReposit
 
     fun findAll() = repository.findAll()
 
-    fun create(department : Department) = repository.save(department)
+    fun create(department : Department)  = repository.save(department)
 }
