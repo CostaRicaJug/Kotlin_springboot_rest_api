@@ -10,9 +10,6 @@ import org.springframework.context.annotation.Configuration
  * Created by credondo on 6/8/16.
  */
 @SpringBootApplication
-@Configuration
-@EnableAutoConfiguration
-@ComponentScan
 open class Application {
     companion object {
         @JvmStatic fun main(args: Array<String>) {

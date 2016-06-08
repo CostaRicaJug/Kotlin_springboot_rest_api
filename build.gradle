@@ -40,6 +40,8 @@ dependencies {
     compile ('postgresql:postgresql:9.1-901-1.jdbc4')
     compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.6.6")
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile("org.jetbrains.kotlinx:kotlinx-support-jdk8:0.1") //Streams support.
+
 }
 
 task wrapper(type: Wrapper) {
